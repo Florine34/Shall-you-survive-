@@ -1,1 +1,2 @@
-# Shall-you-survive-
+# Shall-you-survive
+Une vie paisible et sans retournements ne m’allait pas, je voulais plus d’adrénaline seulement je suis allé trop loin .. Un artefact qui soi-disant menait à aventures et trésors .. il m’y a mené par le biais d’une malédiction où je devais aller trouver son jumeau si je ne voulais pas en mourir .. Feriez-vous les bons choix et retrouveriez vous l'artefcat ?

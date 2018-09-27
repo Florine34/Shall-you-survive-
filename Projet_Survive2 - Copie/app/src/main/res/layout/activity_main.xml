@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.justine.shallyousurvive.MainActivity"
+        android:background="@drawable/background"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight = "0.5">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/survival" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.5"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/boutonJouer"
+            android:layout_width="80pt"
+            android:layout_height="30pt"
+            android:background="@drawable/play"
+            android:scaleType="fitCenter"
+            android:layout_gravity="center_horizontal"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp">
+        </View>
+
+        <ImageButton
+            android:id="@+id/boutonRegles"
+            android:layout_width="80pt"
+            android:layout_height="30pt"
+            android:background="@drawable/regles"
+            android:scaleType="fitCenter"
+            android:layout_gravity="center_horizontal"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp">
+        </View>
+
+        <ImageButton
+            android:id="@+id/boutonQuitter"
+            android:layout_width="80pt"
+            android:layout_height="30pt"
+            android:background="@drawable/quit"
+            android:scaleType="fitCenter"
+            android:layout_gravity="center_horizontal" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.justine.shallyousurvive.MainActivity"
+    android:background="@drawable/background"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:padding="5dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="Bienvenue dans les règles de “shall you survive” !"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="Au début du jeu, le joueur devra choisir entre trois personnages : un mage, un voleur et un mercenaire. \n
+
+Chacun de ses personnages possèdent plusieurs caractéristiques noté sur 10 :\n
+- un nombre de point de vie.
+- une puissance de force.\n
+- une compétence d’agilité.\n
+- une puissance de magie.\n
+- une somme d’argent.\n
+
+Chacunes de ses caractéristiques vont être différentes au début du jeu selon le personnage choisi excepté le nombre de point de vie qui est à son maximum au début de la partie pour tout le monde.
+\n
+Une fois le personnage choisis, vous arriverez sur une histoire suivis d’une série de choix.\n
+Selon vos choix, votre personnage se verra diminuer ses compétences ou au contraire en gagner. A vous de les utiliser intelligemment. !\n
+
+Allez vous réussir à survivre jusqu’au bout de la partie ?\n
+
+Bonne chance !
+"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

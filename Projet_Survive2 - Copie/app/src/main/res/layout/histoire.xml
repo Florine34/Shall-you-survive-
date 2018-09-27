@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.justine.shallyousurvive.MainActivity"
+    android:background="@drawable/background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/bar">
+
+            <TableRow
+                android:gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/heart"/>
+
+                <RelativeLayout
+                    android:layout_gravity="center">
+                    <TextView
+                        android:id="@+id/StatHp"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="10"
+                        android:textSize="18sp"
+                        android:textColor="@color/white"/>
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"></LinearLayout>
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/gold"/>
+
+                <RelativeLayout
+                    android:layout_gravity="center">
+                    <TextView
+                        android:id="@+id/StatOr"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="40"
+                        android:textSize="18sp"
+                        android:textColor="@color/white"/>
+                </RelativeLayout>
+
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/black"></View>
+
+            <ImageView
+                android:id="@+id/imgHistoire"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/histoire1" />
+
+            <TextView
+                android:id="@+id/textHistoire"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris semper vehicula risus eget condimentum. Donec dapibus porttitor orci. Nam mattis, libero eget suscipit imperdiet, purus augue ultrices ipsum, porttitor aliquam nisl risus vitae arcu. Vivamus at augue malesuada, mattis nulla at, dignissim est. Praesent sed laoreet nisi, sed tempus turpis. Sed sit amet fringilla mauris. Nullam eu congue sem, in ullamcorper lorem. Vivamus mattis eleifend ipsum, quis pellentesque diam ultricies at. Vestibulum lobortis neque id nisl elementum, a finibus tellus dictum."
+                android:textColor="@color/black"
+                android:textSize="18sp"></TextView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/black"></View>
+
+            <RadioGroup
+                android:id="@+id/radioGroupHistoire"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="10dp">
+
+                <RadioButton
+                    android:id="@+id/choix1Histoire"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:checked="true"
+                    android:text="Lorem impsum"
+                    android:textSize="18sp" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/black"></View>
+
+                <RadioButton
+                    android:id="@+id/choix2Histoire"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="5dp"
+                    android:text="Lorem ipsum"
+                    android:textSize="18sp" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/black"></View>
+
+                <RadioButton
+                    android:id="@+id/choix3Histoire"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="5dp"
+                    android:text="Lorem ipsum"
+                    android:textSize="18sp" />
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/validerChoix"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="5dp"
+                android:text="Valider mon choix" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

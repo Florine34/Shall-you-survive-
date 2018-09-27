@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.justine.shallyousurvive.MainActivity"
+    android:background="@drawable/background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/bar">
+
+            <TableRow
+                android:gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp">
+
+                <ImageView
+                    android:layout_width="49dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/heart" />
+
+                <RelativeLayout android:layout_gravity="center">
+
+                    <TextView
+                        android:id="@+id/StatHp"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="10"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"></LinearLayout>
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/gold"/>
+
+                <RelativeLayout
+                    android:layout_gravity="center">
+                    <TextView
+                        android:id="@+id/StatOr"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="40"
+                        android:textSize="18sp"
+                        android:textColor="@color/white"/>
+                </RelativeLayout>
+
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imgHistoire"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/perdu" />
+
+    <TextView
+        android:id="@+id/textHistoire"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="Je suis arrivé au pieds de la ville la plus proche mais je ne suis pas encore au bout de mes peines, dans ma précipitation j’ai oublié de prendre à manger et je vais avoir besoin de rentrer dans la ville pour me ravitailler avant de reprendre mon chemin. Des gardes protègent l’entrée et laissent passer ceux qui payent ... "
+        android:textColor="@color/black"
+        android:textSize="18sp">
+
+    </TextView>
+
+    <RadioButton
+        android:id="@+id/radioButtonEvenement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:paddingRight="10dp"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris a nisl enim. Vivamus pulvinar, ante eget sagittis iaculis, nunc ex dapibus libero, et fermentum enim augue vitae tortor."
+        android:textSize="18sp" />
+
+    <ImageButton
+        android:id="@+id/validerChoix"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="end"
+        android:background="@drawable/fleche"
+        android:scaleType="fitCenter" />
+
+
+</LinearLayout>
